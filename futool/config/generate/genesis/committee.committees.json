@@ -1,0 +1,119 @@
+[
+  {
+    "@type": "/fury.committee.v1beta1.MemberCommittee",
+    "base_committee": {
+      "id": "1",
+      "description": "Fury Stability Committee",
+      "members": ["$committee"],
+      "permissions": [
+        { "@type": "/fury.committee.v1beta1.TextPermission" },
+        {
+          "@type": "/fury.committee.v1beta1.CommunityPoolLendWithdrawPermission"
+        },
+        {
+          "@type": "/fury.committee.v1beta1.ParamsChangePermission",
+          "allowed_params_changes": [
+            { "subspace": "auction", "key": "BidDuration" },
+            { "subspace": "auction", "key": "IncrementSurplus" },
+            { "subspace": "auction", "key": "IncrementDebt" },
+            { "subspace": "auction", "key": "IncrementCollateral" },
+            { "subspace": "bep3", "key": "AssetParams" },
+            { "subspace": "cdp", "key": "GlobalDebtLimit" },
+            { "subspace": "cdp", "key": "SurplusThreshold" },
+            { "subspace": "cdp", "key": "SurplusLot" },
+            { "subspace": "cdp", "key": "DebtThreshold" },
+            { "subspace": "cdp", "key": "DebtLot" },
+            { "subspace": "cdp", "key": "DistributionFrequency" },
+            { "subspace": "cdp", "key": "CollateralParams" },
+            { "subspace": "cdp", "key": "DebtParam" },
+            { "subspace": "incentive", "key": "Active" },
+            { "subspace": "furydist", "key": "Active" },
+            { "subspace": "pricefeed", "key": "Markets" },
+            { "subspace": "jinx", "key": "MoneyMarkets" },
+            { "subspace": "jinx", "key": "MinimumBorrowUSDValue" }
+          ]
+        }
+      ],
+      "vote_threshold": "0.667000000000000000",
+      "proposal_duration": "604800s",
+      "tally_option": "TALLY_OPTION_FIRST_PAST_THE_POST"
+    }
+  },
+  {
+    "@type": "/fury.committee.v1beta1.MemberCommittee",
+    "base_committee": {
+      "id": "2",
+      "description": "Fury Safety Committee",
+      "members": ["$committee"],
+      "permissions": [
+        { "@type": "/fury.committee.v1beta1.SoftwareUpgradePermission" }
+      ],
+      "vote_threshold": "0.667000000000000000",
+      "proposal_duration": "604800s",
+      "tally_option": "TALLY_OPTION_FIRST_PAST_THE_POST"
+    }
+  },
+  {
+    "@type": "/fury.committee.v1beta1.MemberCommittee",
+    "base_committee": {
+      "id": "3",
+      "description": "Fury God Committee (testing only)",
+      "members": ["$committee"],
+      "permissions": [{ "@type": "/fury.committee.v1beta1.GodPermission" }],
+      "vote_threshold": "0.667000000000000000",
+      "proposal_duration": "604800s",
+      "tally_option": "TALLY_OPTION_FIRST_PAST_THE_POST"
+    }
+  },
+  {
+    "@type": "/fury.committee.v1beta1.TokenCommittee",
+    "base_committee": {
+      "id": "4",
+      "description": "JINX Governance Committee",
+      "members": ["$committee"],
+      "permissions": [
+        { "@type": "/fury.committee.v1beta1.TextPermission" },
+        {
+          "@type": "/fury.committee.v1beta1.ParamsChangePermission",
+          "allowed_params_changes": [
+            { "subspace": "jinx", "key": "MoneyMarkets" },
+            { "subspace": "jinx", "key": "MinimumBorrowUSDValue" },
+            { "subspace": "incentive", "key": "JinxSupplyRewardPeriods" },
+            { "subspace": "incentive", "key": "JinxBorrowRewardPeriods" },
+            { "subspace": "incentive", "key": "JinxDelegatorRewardPeriods" }
+          ]
+        }
+      ],
+      "vote_threshold": "0.667000000000000000",
+      "proposal_duration": "604800s",
+      "tally_option": "TALLY_OPTION_DEADLINE"
+    },
+    "quorum": "0.330000000000000000",
+    "tally_denom": "jinx"
+  },
+  {
+    "@type": "/fury.committee.v1beta1.TokenCommittee",
+    "base_committee": {
+      "id": "5",
+      "description": "MER Governance Committee",
+      "members": ["$committee"],
+      "permissions": [
+        { "@type": "/fury.committee.v1beta1.TextPermission" },
+        {
+          "@type": "/fury.committee.v1beta1.ParamsChangePermission",
+          "allowed_params_changes": [
+            { "subspace": "swap", "key": "AllowedPools" },
+            { "subspace": "swap", "key": "SwapFee" },
+            { "subspace": "incentive", "key": "DelegatorRewardPeriods" },
+            { "subspace": "incentive", "key": "SwapRewardPeriods" }
+          ]
+        }
+      ],
+      "vote_threshold": "0.667000000000000000",
+      "proposal_duration": "604800s",
+      "tally_option": "TALLY_OPTION_DEADLINE"
+    },
+    "quorum": "0.330000000000000000",
+    "tally_denom": "mer"
+  }
+]

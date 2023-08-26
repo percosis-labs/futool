@@ -1,0 +1,127 @@
+{
+  "params": {
+    "allowed_pools": [
+      {
+        "token_a": "bnb",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "btcb",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "busd",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "jinx",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "ibc/B8AF5D92165F35AB31F3FC7C7B444B9D240760FA5D406C49D24862BD0284E395",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "mer",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "ufury",
+        "token_b": "usdf"
+      },
+      {
+        "token_a": "usdf",
+        "token_b": "xrpb"
+      }
+    ],
+    "swap_fee": "0.001500000000000000"
+  },
+  "pool_records": [
+    {
+      "pool_id": "btcb:usdf",
+      "reserves_a": {
+        "amount": "200000000",
+        "denom": "btcb"
+      },
+      "reserves_b": {
+        "amount": "100000000000",
+        "denom": "usdf"
+      },
+      "total_shares": "4472135954"
+    },
+    {
+      "pool_id": "jinx:usdf",
+      "reserves_a": {
+        "amount": "1000000000",
+        "denom": "jinx"
+      },
+      "reserves_b": {
+        "amount": "1000000000",
+        "denom": "usdf"
+      },
+      "total_shares": "1000000000"
+    },
+    {
+      "pool_id": "mer:usdf",
+      "reserves_a": {
+        "amount": "5000000000",
+        "denom": "mer"
+      },
+      "reserves_b": {
+        "amount": "1000000000",
+        "denom": "usdf"
+      },
+      "total_shares": "2236067977"
+    },
+    {
+      "pool_id": "ufury:usdf",
+      "reserves_a": {
+        "amount": "5000000000",
+        "denom": "ufury"
+      },
+      "reserves_b": {
+        "amount": "1000000000",
+        "denom": "usdf"
+      },
+      "total_shares": "2236067977"
+    }
+  ],
+  "share_records": [
+    {
+      "depositor": "$whale",
+      "pool_id": "btcb:usdf",
+      "shares_owned": "4472135954"
+    },
+    {
+      "depositor": "$whale",
+      "pool_id": "jinx:usdf",
+      "shares_owned": "1000000000"
+    },
+    {
+      "depositor": "$whale",
+      "pool_id": "mer:usdf",
+      "shares_owned": "2236067977"
+    },
+    {
+      "depositor": "$whale",
+      "pool_id": "ufury:usdf",
+      "shares_owned": "2236067977"
+    }
+  ]
+}

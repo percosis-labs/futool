@@ -1,0 +1,357 @@
+{
+  "usdf_minting_reward_periods": null,
+  "jinx_supply_reward_periods": [
+    {
+      "active": true,
+      "collateral_type": "usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-10-16T14:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "228026"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-10-16T14:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "15945"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "jinx",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-11-11T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "3189"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "bnb",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-11-11T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "2391"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "busd",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-11-11T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "637"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "btcb",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-11-11T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "3189"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "xrpb",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-11-11T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "1594"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "ufury",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2024-11-11T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "637"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "erc20/axelar/usdc",
+      "start": "2023-03-22T16:00:00Z",
+      "end": "2024-03-22T16:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "3189"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "erc20/multichain/usdc",
+      "start": "2023-04-25T17:00:00Z",
+      "end": "2024-04-25T17:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "3189"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "erc20/multichain/usdt",
+      "start": "2023-04-25T17:00:00Z",
+      "end": "2024-04-25T17:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "3189"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "erc20/multichain/wbtc",
+      "start": "2023-04-25T17:00:00Z",
+      "end": "2024-04-25T17:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "3189"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "erc20/axelar/wbtc",
+      "start": "2023-06-09T17:00:00Z",
+      "end": "2024-06-09T17:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "23918"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "erc20/tether/usdt",
+      "start": "2023-07-13T17:00:00Z",
+      "end": "2024-07-13T17:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "79729"
+        }
+      ]
+    }
+  ],
+  "jinx_borrow_reward_periods": null,
+  "delegator_reward_periods": null,
+  "swap_reward_periods": [
+    {
+      "active": true,
+      "collateral_type": "bnb:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "1275"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "btcb:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "1594"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "busd:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "6378"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "jinx:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "1116"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "318"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "797"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "159"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "mer:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "478"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "ufury:usdf",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "2551"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "collateral_type": "usdf:xrpb",
+      "start": "2022-11-11T15:00:00Z",
+      "end": "2025-08-29T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "797"
+        }
+      ]
+    }
+  ],
+  "claim_multipliers": [
+    {
+      "denom": "jinx",
+      "multipliers": [
+        {
+          "name": "large",
+          "factor": "1.000000000000000000"
+        }
+      ]
+    },
+    {
+      "denom": "ibc/799FDD409719A1122586A629AE8FCA17380351A51C1F47A80A1B8E7F2A491098",
+      "multipliers": [
+        {
+          "name": "large",
+          "factor": "1.000000000000000000"
+        }
+      ]
+    },
+    {
+      "denom": "ufury",
+      "multipliers": [
+        {
+          "name": "large",
+          "months_lockup": "12",
+          "factor": "1.000000000000000000"
+        },
+        {
+          "name": "small",
+          "months_lockup": "1",
+          "factor": "0.200000000000000000"
+        }
+      ]
+    },
+    {
+      "denom": "mer",
+      "multipliers": [
+        {
+          "name": "large",
+          "factor": "1.000000000000000000"
+        }
+      ]
+    }
+  ],
+  "claim_end": "2026-04-08T14:00:00Z",
+  "savings_reward_periods": null,
+  "earn_reward_periods": [
+    {
+      "active": true,
+      "collateral_type": "bfury",
+      "start": "2022-10-26T15:00:00Z",
+      "end": "2024-10-26T15:00:00Z",
+      "rewards_per_second": [
+        {
+          "denom": "ufury",
+          "amount": "159459"
+        }
+      ]
+    }
+  ]
+}

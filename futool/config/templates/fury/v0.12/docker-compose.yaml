@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    furynode:
+        image: "fury/fury:${FURY_TAG:-v0.12.0}"
+        ports:
+            # open default fury rpc port
+            - "26657:26657"
+        volumes:
+            - "./fury/initstate/.fud/config:/root/.fud/config"
+            - "./fury/initstate/.fucli/config:/root/.fucli/config"
+        # start the blockchain, and set rpc to listen to connections from outside the container
+        command: ["sh", "-c", "/root/.fud/config/init-data-directory.sh && fud start --pruning=nothing --rpc.laddr=tcp://0.0.0.0:26657"]
+    furyrest:
+        image: "fury/fury:${FURY_TAG:-v0.12.0}"
+        ports:
+            # open default rest port
+            - "1317:1317"
+        command: ["fucli", "rest-server", "--node=tcp://furynode:26657", "--trust-node", "--laddr=tcp://0.0.0.0:1317", "--unsafe-cors"]

@@ -1,0 +1,39 @@
+global:
+  api-listen-addr: :5183
+  timeout: 10s
+  memo: ""
+  light-cache-size: 20
+chains:
+  ibcchain:
+    type: cosmos
+    value:
+      key: testkey
+      chain-id: furylocalnet_8889-2
+      rpc-addr: http://ibcnode:26657
+      account-prefix: fury
+      keyring-backend: test
+      gas-adjustment: 1.2
+      gas-prices: 0.01uatom
+      min-gas-amount: 0
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+      extra-codecs: []
+  fury:
+    type: cosmos
+    value:
+      key: testkey
+      chain-id: furylocalnet_8888-1
+      rpc-addr: http://furynode:26657
+      account-prefix: fury
+      keyring-backend: test
+      gas-adjustment: 1.2
+      gas-prices: 0.01ufury
+      min-gas-amount: 0
+      debug: false
+      timeout: 20s
+      output-format: json
+      sign-mode: direct
+      extra-codecs: []
+paths: {}

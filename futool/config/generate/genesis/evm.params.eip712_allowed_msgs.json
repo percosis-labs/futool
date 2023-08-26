@@ -1,0 +1,698 @@
+[
+  {
+    "msg_type_url": "/fury.evmutil.v1beta1.MsgConvertERC20ToCoin",
+    "msg_value_type_name": "MsgValueEVMConvertERC20ToCoin",
+    "value_types": [
+      {
+        "name": "initiator",
+        "type": "string"
+      },
+      {
+        "name": "receiver",
+        "type": "string"
+      },
+      {
+        "name": "fury_erc20_address",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "string"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.evmutil.v1beta1.MsgConvertCoinToERC20",
+    "msg_value_type_name": "MsgValueEVMConvertCoinToERC20",
+    "value_types": [
+      {
+        "name": "initiator",
+        "type": "string"
+      },
+      {
+        "name": "receiver",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.earn.v1beta1.MsgDeposit",
+    "msg_value_type_name": "MsgValueEarnDeposit",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      },
+      {
+        "name": "strategy",
+        "type": "int32"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.earn.v1beta1.MsgWithdraw",
+    "msg_value_type_name": "MsgValueEarnWithdraw",
+    "value_types": [
+      {
+        "name": "from",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      },
+      {
+        "name": "strategy",
+        "type": "int32"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/cosmos.staking.v1beta1.MsgDelegate",
+    "msg_value_type_name": "MsgValueStakingDelegate",
+    "value_types": [
+      {
+        "name": "delegator_address",
+        "type": "string"
+      },
+      {
+        "name": "validator_address",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/cosmos.staking.v1beta1.MsgUndelegate",
+    "msg_value_type_name": "MsgValueStakingUndelegate",
+    "value_types": [
+      {
+        "name": "delegator_address",
+        "type": "string"
+      },
+      {
+        "name": "validator_address",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/cosmos.staking.v1beta1.MsgBeginRedelegate",
+    "msg_value_type_name": "MsgValueStakingBeginRedelegate",
+    "value_types": [
+      {
+        "name": "delegator_address",
+        "type": "string"
+      },
+      {
+        "name": "validator_src_address",
+        "type": "string"
+      },
+      {
+        "name": "validator_dst_address",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.incentive.v1beta1.MsgClaimUSDFMintingReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimUSDFMintingReward",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "multiplier_name",
+        "type": "string"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.incentive.v1beta1.MsgClaimJinxReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimJinxReward",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "denoms_to_claim",
+        "type": "IncentiveSelection[]"
+      }
+    ],
+    "nested_types": [
+      {
+        "name": "IncentiveSelection",
+        "attrs": [
+          {
+            "name": "denom",
+            "type": "string"
+          },
+          {
+            "name": "multiplier_name",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "msg_type_url": "/fury.incentive.v1beta1.MsgClaimDelegatorReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimDelegatorReward",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "denoms_to_claim",
+        "type": "IncentiveSelection[]"
+      }
+    ],
+    "nested_types": [
+      {
+        "name": "IncentiveSelection",
+        "attrs": [
+          {
+            "name": "denom",
+            "type": "string"
+          },
+          {
+            "name": "multiplier_name",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "msg_type_url": "/fury.incentive.v1beta1.MsgClaimSwapReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimSwapReward",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "denoms_to_claim",
+        "type": "IncentiveSelection[]"
+      }
+    ],
+    "nested_types": [
+      {
+        "name": "IncentiveSelection",
+        "attrs": [
+          {
+            "name": "denom",
+            "type": "string"
+          },
+          {
+            "name": "multiplier_name",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "msg_type_url": "/fury.incentive.v1beta1.MsgClaimSavingsReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimSavingsReward",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "denoms_to_claim",
+        "type": "IncentiveSelection[]"
+      }
+    ],
+    "nested_types": [
+      {
+        "name": "IncentiveSelection",
+        "attrs": [
+          {
+            "name": "denom",
+            "type": "string"
+          },
+          {
+            "name": "multiplier_name",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "msg_type_url": "/fury.incentive.v1beta1.MsgClaimEarnReward",
+    "msg_value_type_name": "MsgValueIncentiveClaimEarnReward",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "denoms_to_claim",
+        "type": "IncentiveSelection[]"
+      }
+    ],
+    "nested_types": [
+      {
+        "name": "IncentiveSelection",
+        "attrs": [
+          {
+            "name": "denom",
+            "type": "string"
+          },
+          {
+            "name": "multiplier_name",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "msg_type_url": "/fury.router.v1beta1.MsgMintDeposit",
+    "msg_value_type_name": "MsgValueRouterMintDeposit",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "validator",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.router.v1beta1.MsgDelegateMintDeposit",
+    "msg_value_type_name": "MsgValueRouterDelegateMintDeposit",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "validator",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.router.v1beta1.MsgWithdrawBurn",
+    "msg_value_type_name": "MsgValueRouterWithdrawBurn",
+    "value_types": [
+      {
+        "name": "from",
+        "type": "string"
+      },
+      {
+        "name": "validator",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.router.v1beta1.MsgWithdrawBurnUndelegate",
+    "msg_value_type_name": "MsgValueRouterWithdrawBurnUndelegate",
+    "value_types": [
+      {
+        "name": "from",
+        "type": "string"
+      },
+      {
+        "name": "validator",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/cosmos.gov.v1beta1.MsgVote",
+    "msg_value_type_name": "MsgValueGovVote",
+    "value_types": [
+      {
+        "name": "proposal_id",
+        "type": "uint64"
+      },
+      {
+        "name": "voter",
+        "type": "string"
+      },
+      {
+        "name": "option",
+        "type": "int32"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/cosmos.bank.v1beta1.MsgSend",
+    "msg_value_type_name": "MsgValueBankSend",
+    "value_types": [
+      {
+        "name": "from_address",
+        "type": "string"
+      },
+      {
+        "name": "to_address",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin[]"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.liquid.v1beta1.MsgMintDerivative",
+    "msg_value_type_name": "MsgValueMintDerivative",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "validator",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.liquid.v1beta1.MsgBurnDerivative",
+    "msg_value_type_name": "MsgValueBurnDerivative",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "validator",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.jinx.v1beta1.MsgWithdraw",
+    "msg_value_type_name": "MsgValueJinxWithdraw",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin[]"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.jinx.v1beta1.MsgDeposit",
+    "msg_value_type_name": "MsgValueJinxDeposit",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin[]"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.evmutil.v1beta1.MsgConvertCosmosCoinToERC20",
+    "msg_value_type_name": "MsgConvertCosmosCoinToERC20",
+    "value_types": [
+      {
+        "name": "initiator",
+        "type": "string"
+      },
+      {
+        "name": "receiver",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.evmutil.v1beta1.MsgConvertCosmosCoinFromERC20",
+    "msg_value_type_name": "MsgConvertCosmosCoinFromERC20",
+    "value_types": [
+      {
+        "name": "initiator",
+        "type": "string"
+      },
+      {
+        "name": "receiver",
+        "type": "string"
+      },
+      {
+        "name": "amount",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward",
+    "msg_value_type_name": "MsgValueWithdrawDelegatorReward",
+    "value_types": [
+      {
+        "name": "delegator_address",
+        "type": "string"
+      },
+      {
+        "name": "validator_address",
+        "type": "string"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/ibc.applications.transfer.v1.MsgTransfer",
+    "msg_value_type_name": "MsgValueIBCTransfer",
+    "value_types": [
+      {
+        "name": "source_port",
+        "type": "string"
+      },
+      {
+        "name": "source_channel",
+        "type": "string"
+      },
+      {
+        "name": "token",
+        "type": "Coin"
+      },
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "receiver",
+        "type": "string"
+      },
+      {
+        "name": "timeout_height",
+        "type": "Height"
+      },
+      {
+        "name": "timeout_timestamp",
+        "type": "uint64"
+      },
+      {
+        "name": "memo",
+        "type": "string"
+      }
+    ],
+    "nested_types": [
+      {
+        "name": "Height",
+        "attrs": [
+          {
+            "name": "revision_number",
+            "type": "uint64"
+          },
+          {
+            "name": "revision_height",
+            "type": "uint64"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "msg_type_url": "/fury.cdp.v1beta1.MsgCreateCDP",
+    "msg_value_type_name": "MsgValueCdpCreateCDP",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "collateral",
+        "type": "Coin"
+      },
+      {
+        "name": "principal",
+        "type": "Coin"
+      },
+      {
+        "name": "collateral_type",
+        "type": "string"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.cdp.v1beta1.MsgDeposit",
+    "msg_value_type_name": "MsgValueCdpDeposit",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "owner",
+        "type": "string"
+      },
+      {
+        "name": "collateral",
+        "type": "Coin"
+      },
+      {
+        "name": "collateral_type",
+        "type": "string"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.cdp.v1beta1.MsgWithdraw",
+    "msg_value_type_name": "MsgValueCdpWithdraw",
+    "value_types": [
+      {
+        "name": "depositor",
+        "type": "string"
+      },
+      {
+        "name": "owner",
+        "type": "string"
+      },
+      {
+        "name": "collateral",
+        "type": "Coin"
+      },
+      {
+        "name": "collateral_type",
+        "type": "string"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.cdp.v1beta1.MsgDrawDebt",
+    "msg_value_type_name": "MsgValueCdpDrawDebt",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "collateral_type",
+        "type": "string"
+      },
+      {
+        "name": "principal",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  },
+  {
+    "msg_type_url": "/fury.cdp.v1beta1.MsgRepayDebt",
+    "msg_value_type_name": "MsgValueCdpRepayDebt",
+    "value_types": [
+      {
+        "name": "sender",
+        "type": "string"
+      },
+      {
+        "name": "collateral_type",
+        "type": "string"
+      },
+      {
+        "name": "payment",
+        "type": "Coin"
+      }
+    ],
+    "nested_types": []
+  }
+]
